@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Guess the Number</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {
+      margin: 0;
+      padding: 40px;
+      font-family: Arial, Helvetica, sans-serif;
+      background: #0f172a;
+      color: #e5e7eb;
+    }
+    .card {
+      max-width: 500px;
+      margin: auto;
+      background: #111827;
+      padding: 24px;
+      border-radius: 14px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+    }
+    input, button {
+      width: 100%;
+      padding: 10px;
+      margin-top: 10px;
+      border-radius: 6px;
+      border: none;
+      font-size: 1rem;
+    }
+    button {
+      background: #2563eb;
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    a {
+      color: #93c5fd;
+      display: block;
+      margin-top: 16px;
+      text-align: center;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+
+<div class="card">
+  <h1>Number Guessing Game</h1>
+  <p>I’m thinking of a number between 1 and 100.</p>
+
+  <input id="guess" type="number" placeholder="Enter a number">
+  <button onclick="checkGuess()">Guess</button>
+
+  <p id="message"></p>
+
+  <a href="scratch.html">← Back to Scratch Page</a>
+</div>
+
+<script>
+  const number = Math.floor(Math.random() * 100) + 1;
+
+  function checkGuess() {
+    const guess = Number(document.getElementById("guess").value);
+    const msg = document.getElementById("message");
+
+    if (guess === number) {
+      msg.textContent = "Correct! You guessed the number.";
+    } else if (guess < number) {
+      msg.textContent = "Too low. Try again.";
+    } else {
+      msg.textContent = "Too high. Try again.";
+    }
+  }
+</script>
+
+</body>
+</html>
