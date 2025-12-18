@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Scratch Page | Griffin Rands</title>
+
+  <!-- Your custom stylesheet (REQUIRED) -->
+  <link rel="stylesheet" href="scratch.css" />
+</head>
+<body>
+
+  <!-- Div #1 -->
+  <div class="topbar">
+    <a href="../index.html">← Back to Professional Site</a>
+    <a href="app.html">Open Web App →</a>
+  </div>
+
+  <div class="container">
+
+    <!-- Div #2 -->
+    <div class="card">
+      <h1>Scratch Page</h1>
+      <p class="muted">
+        This page is built from scratch (no Bootstrap). It demonstrates HTML, CSS, and embedded content.
+      </p>
+
+      <!-- On-page anchor link (REQUIRED) -->
+      <p><a href="#tableau">Jump to the Tableau Viz ↓</a></p>
+    </div>
+
+    <!-- Div #3 -->
+    <div class="card">
+      <h2>Nested List Requirement</h2>
+
+      <!-- Ordered list with unordered list inside (REQUIRED) -->
+      <ol>
+        <li>Golf practice priorities
+          <ul>
+            <li>Start line (face control)</li>
+            <li>Low point control</li>
+            <li>Shot shape consistency</li>
+          </ul>
+        </li>
+        <li>How I track progress
+          <ul>
+            <li>Fairways hit</li>
+            <li>Greens in regulation</li>
+            <li>Putts per round</li>
+          </ul>
+        </li>
+      </ol>
+    </div>
+
+    <div class="card">
+      <h2>Image Requirement</h2>
+      <p class="muted">Upload an image into the <code>scratch</code> folder and name it <code>my-image.jpg</code>.</p>
+
+      <!-- Image NOT from Bootstrap theme (REQUIRED) -->
+      <img class="feature-img" src="my-image.jpg" alt="Scratch page image">
+    </div>
+
+    <div class="card">
+      <h2>YouTube Embed Requirement</h2>
+
+      <!-- Embedded YouTube video (REQUIRED) -->
+      <div class="video-wrap">
+        <iframe
+          src="https://www.youtube.com/embed/3X9KkKq1z2w"
+          title="YouTube video player"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen></iframe>
+      </div>
+
+      <p class="muted">You can replace this with any YouTube video you want.</p>
+    </div>
+
+    <!-- Tableau anchor target (REQUIRED) -->
+    <div id="tableau" class="card">
+      <h2>Interactive Tableau Embed Requirement</h2>
+      <p class="muted">
+        Replace the placeholder embed below with a real Tableau Public embed code.
+        It must be interactive (not a screenshot).
+      </p>
+
+      <!-- Tableau embed placeholder -->
+      <div class="tableau-wrap">
+        <div class='tableauPlaceholder' id='vizPlaceholder' style='position: relative;'>
+          <noscript>
+            <a href='#'><img alt='Tableau Viz' src='https://public.tableau.com/static/images/RE/REPLACE/1_rss.png' style='border:none' /></a>
+          </noscript>
+          <object class='tableauViz' style='display:none;'>
+            <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+            <param name='embed_code_version' value='3' />
+            <param name='site_root' value='' />
+            <param name='name' value='REPLACE/REPLACE' />
+            <param name='tabs' value='yes' />
+            <param name='toolbar' value='yes' />
+            <param name='language' value='en-US' />
+          </object>
+        </div>
+        <script type='text/javascript' src='https://public.tableau.com/javascripts/api/viz_v1.js'></script>
+      </div>
+
+      <p class="muted">
+        To fix this: open a Tableau Public viz → Share → Copy Embed Code → paste it here.
+      </p>
+    </div>
+
+  </div>
+</body>
+</html>
